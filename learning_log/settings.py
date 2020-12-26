@@ -146,3 +146,8 @@ if os.environ.get('DEBUG') == 'TRUE':
     DEBUG = True
 elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
+
+
+# Allow only Heroku to host the project.
+ALLOWED_HOSTS = ['learninglog767.herokuapp.com']
+DEBUG = False
